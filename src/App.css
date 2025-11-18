@@ -1,8 +1,79 @@
-
-.main-content-wrapper {
-  height: 100vh;
-  width: 99vw;
-  border: 1px solid blue;
+html, body {
+  margin: 0;
+  padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
+body {
+  font-family: "Manrope", Arial, sans-serif;
+  color: #111;
+  background: #fff;
+  line-height: 1.5;
+  padding-top: 80px; 
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: #e7e6e6;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 18px;
+}
+
+.initials-logo {
+  text-decoration: none;
+  color: #111;
+  letter-spacing: 2px;
+  font-family: "Merriweather", serif;
+  font-weight: 600;
+  font-size: 28px;
+}
+
+.navbar-links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 22px;
+}
+
+.navbuttons {
+  text-decoration: none;
+  color: #111;
+  font-size: 1.05rem;
+  letter-spacing: .3px;
+  position: relative;
+  padding-bottom: 2px;
+}
+
+.navbuttons::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 0;
+  height: 2px;
+  background: #111;
+  transition: width .18s ease;
+}
+
+.navbuttons:hover::after,
+.navbuttons.active::after {
+  width: 100%;
+}
