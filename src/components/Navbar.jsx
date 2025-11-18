@@ -1,9 +1,7 @@
-import { Link, useLocation } from "react-router-dom";
-import "../App.css"; 
+import { Link } from "react-router-dom";
+import "../App.css";
 
 export default function Navbar() {
-  const { pathname } = useLocation(); 
-
   return (
     <nav className="navbar" id="navbar">
       <div>
@@ -12,41 +10,10 @@ export default function Navbar() {
 
       <div className="navbar-links">
         <ul>
-          <li>
-            <Link
-              to="/"
-              className={pathname === "/" ? "active navbuttons" : "navbuttons"}
-            >
-              HOMEPAGE
-            </Link>
-          </li>
-
-          <li>
-            <Link
-              to="/resume"
-              className={pathname === "/resume" ? "active navbuttons" : "navbuttons"}
-            >
-              RESUME
-            </Link>
-          </li>
-
-          <li>
-            <Link
-              to="/travel"
-              className={pathname === "/travel" ? "active navbuttons" : "navbuttons"}
-            >
-              TRAVEL
-            </Link>
-          </li>
-
-          <li>
-            <Link
-              to="/contact"
-              className={pathname === "/contact" ? "active navbuttons" : "navbuttons"}
-            >
-              CONTACT
-            </Link>
-          </li>
+          <li><Link to="/" className="navbuttons">HOMEPAGE</Link></li>
+          <li><Link to="/resume" className="navbuttons">RESUME</Link></li>
+          <li><Link to="/travel" className="navbuttons">TRAVEL</Link></li>
+          <li><Link to="/contact" className="navbuttons">CONTACT</Link></li>
         </ul>
       </div>
     </nav>

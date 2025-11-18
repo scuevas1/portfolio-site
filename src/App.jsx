@@ -1,31 +1,26 @@
-import { useState } from 'react'
-import './App.css'
+import "./App.css";
+import Navbar from "./components/Navbar.jsx";
 
-import Navbar from './components/Navbar.jsx'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import Home from "./pages/home.jsx";
+import Resume from "./pages/resume.jsx";
+import Contact from "./pages/contact.jsx";
+import Travel from "./pages/travel.jsx";
 
-import Home from './pages/home.jsx';
-import Resume from './pages/resume.jsx'
-import Contact from './pages/contact.jsx';
-import Travel from './pages/travel.jsx';
-
-function App() {
-
+export default function App() {
   return (
-    
-<BrowserRouter>
-  <div className="main-content-wrapper">
-    <Navbar />
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/contact" element={<Contact />} />
-      <Route path="/resume" element={<Resume />} />
-      <Route path="/travel" element={<Travel />} />
-    </Routes>
-  </div>
-</BrowserRouter>
-  )
-}
+    <BrowserRouter>
+      <Navbar />
 
-export default App
+      <main className="main-wrapper">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/resume" element={<Resume />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/travel" element={<Travel />} />
+        </Routes>
+      </main>
+    </BrowserRouter>
+  );
+}
