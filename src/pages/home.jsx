@@ -1,44 +1,73 @@
-// src/pages/home.jsx
+import { useEffect, useState } from "react";
+import "../App.css";
+
 export default function Home() {
+  // Typewriter Name Animation
+  const fullName = "Suheily Cuevas";
+  const [typedName, setTypedName] = useState("");
+
+  useEffect(() => {
+    let i = 0;
+    const interval = setInterval(() => {
+      setTypedName(fullName.slice(0, i));
+      i++;
+      if (i > fullName.length) clearInterval(interval);
+    }, 120);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
-    <main className="page-content">
-      <header className="home-hero" id="top">
+    <div className="page-content">
+
+      {/* === Hero Section === */}
+      <header className="home-hero fade-in">
         <div className="home-hero-inner">
-          <p className="home-tagline">Information Technology &amp; Management Student</p>
 
-          <h1 className="home-title">Suheily Cuevas</h1>
-
-          <p className="home-sub">
-            Welcome! I’m a Latina Information Technology and Management student
-            passionate about technology, creativity, and continuous growth.
+          <p className="home-tagline fade-in-delay">
+            IT & Management Student • Chicago • Latina in Tech
           </p>
 
-          <div className="home-actions">
-            <a href="#about" className="btn-primary">Learn more</a>
-            <a href="/contact" className="btn-secondary">Contact</a>
+          <h1 className="home-title typewriter-name">
+            {typedName}
+          </h1>
+
+          <p className="home-sub fade-in-delay">
+            Welcome! I’m an Information Technology & Management student passionate 
+            about networking, systems, creativity, and continuous growth.
+          </p>
+
+          {/* Buttons */}
+          <div className="home-actions fade-in-delay">
+            <a href="#about" className="btn-primary">Learn More</a>
+            <a href="/resume" className="btn-secondary">View Resume</a>
           </div>
+
         </div>
       </header>
 
-      <section className="about-me" id="about">
+      {/* === About Section === */}
+      <section className="about-me fade-in" id="about">
         <h2 className="about-title">ABOUT ME</h2>
+
         <p className="about-text">
           My name is Suheily Cuevas, and I'm a proud Puerto Rican and Mexican woman
-          born and raised in Chicago, IL. I'm currently pursuing both my bachelor's
-          and master's degrees in Information Technology and Management at Illinois Tech.
+          from Chicago, IL. I'm pursuing both my bachelor's and master's degrees 
+          in Information Technology & Management at Illinois Tech.
         </p>
+
         <p className="about-text">
-          I'm passionate about building a career in networking and systems management,
-          with a goal of becoming a network administrator.
+          My focus is networking and systems administration. I love solving technical
+          problems, building systems, and learning how technology empowers people.
         </p>
+
         <p className="about-text">
-          Outside of school and work, I love exploring Chicago's food scene, traveling
-          to new places, and spending time with my family. I also have a deep love for
-          music, and you can usually find me at concerts or festivals around the city.
+          Outside of school and work, I love exploring Chicago’s food scene, 
+          traveling, and going to concerts. Music + tech are my favorite combo.
         </p>
       </section>
 
-      <footer className="home-footer">
+      {/* === Footer === */}
+      <footer className="home-footer fade-in">
         <div className="copyright">
           <p>© 2025 Suheily Cuevas</p>
           <div className="address">
@@ -51,6 +80,7 @@ export default function Home() {
           </div>
         </div>
       </footer>
-    </main>
+
+    </div>
   );
 }
