@@ -1,5 +1,5 @@
-import "./App.css";
 import Navbar from "./components/Navbar.jsx";
+import Footer from "./components/footer.jsx";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -8,19 +8,23 @@ import Resume from "./pages/resume.jsx";
 import Contact from "./pages/contact.jsx";
 import Travel from "./pages/travel.jsx";
 
-export default function App() {
+function App() {
   return (
     <BrowserRouter>
       <Navbar />
 
-      <main className="main-wrapper">
+      <div className="main-content-wrapper">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/resume" element={<Resume />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/resume" element={<Resume />} />
           <Route path="/travel" element={<Travel />} />
         </Routes>
-      </main>
+
+        <Footer />
+      </div>
     </BrowserRouter>
   );
 }
+
+export default App;

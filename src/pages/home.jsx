@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import "../App.css";
 
 export default function Home() {
-  // Typewriter Name Animation
   const fullName = "Suheily Cuevas";
   const [typedName, setTypedName] = useState("");
 
@@ -19,7 +18,6 @@ export default function Home() {
   return (
     <div className="page-content">
 
-      {/* === Hero Section === */}
       <header className="home-hero fade-in">
         <div className="home-hero-inner">
 
@@ -36,7 +34,6 @@ export default function Home() {
             about networking, systems, creativity, and continuous growth.
           </p>
 
-          {/* Buttons */}
           <div className="home-actions fade-in-delay">
             <a href="#about" className="btn-primary">Learn More</a>
             <a href="/resume" className="btn-secondary">View Resume</a>
@@ -45,7 +42,6 @@ export default function Home() {
         </div>
       </header>
 
-      {/* === About Section === */}
       <section className="about-me fade-in" id="about">
         <h2 className="about-title">ABOUT ME</h2>
 
@@ -65,22 +61,6 @@ export default function Home() {
           traveling, and going to concerts. Music + tech are my favorite combo.
         </p>
       </section>
-
-      {/* === Footer === */}
-      <footer className="home-footer fade-in">
-        <div className="copyright">
-          <p>© 2025 Suheily Cuevas</p>
-          <div className="address">
-            <p>Chicago, IL</p>
-            <p>
-              <a href="mailto:suheily.cuevas24@gmail.com">
-                suheily.cuevas24@gmail.com
-              </a>
-            </p>
-          </div>
-        </div>
-      </footer>
-
     </div>
   );
 }
