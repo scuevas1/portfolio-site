@@ -25,7 +25,7 @@ export default function Travel() {
 
       <div className="travel-grid">
         {filteredData.map(place => (
-          <div key={place.id}>{place.country}</div>
+            <TravelCard key={place.id} place={place} />
         ))}
       </div>
     </div>
