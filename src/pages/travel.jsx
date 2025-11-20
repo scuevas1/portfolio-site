@@ -1,4 +1,6 @@
 import { useState } from "react";
+import travelData from "../travelData.json";
+import TravelCard from "../travelCard";
 
 export default function Travel() {
   const [search, setSearch] = useState("");
