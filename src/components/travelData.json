@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "slug": "spain-barcelona",
+    "country": "Spain",
+    "city": "Barcelona",
+    "year": 2022,
+    "story": "Spain was an unforgettable experience with amazing culture and food.",
+    "photos": [
+      { "url": "/travel/spain1.jpg", "caption": "Park Guell" },
+      { "url": "/travel/spain2.jpg", "caption": "La Sagrada Famila" }
+    ]
+  }
+]
