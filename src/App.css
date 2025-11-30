@@ -133,12 +133,21 @@ body {
   font-size: 40px;
   font-weight: 600;
   margin: 0 0 12px;
-  overflow: hidden;
-  white-space: nowrap;
-  border-right: 3px solid #ff6ac1;
-  width: 0;
-  animation: typing 2s steps(20) forwards, blink 0.75s step-end infinite;
+  display: inline-block;
+  position: relative;
 }
+
+.home-title::after {
+  content: "";
+  position: absolute;
+  right: -6px;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background: #ff6ac1;
+  animation: blink 0.7s infinite;
+}
+
 
 @keyframes typing {
   from { width: 0; }
@@ -227,6 +236,88 @@ section {
   to { opacity: 1; transform: translateY(0); }
 }
 
+.featured-section {
+  margin: 10px auto;
+  text-align: center;
+  max-width: 1100px;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 28px;
+  margin-top: 40px;
+}
+
+.feature-card {
+  height: 240px;
+  border-radius: 14px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: left;
+  border: 1px solid #1f2b47;
+  transition: 0.25s ease;
+  cursor: pointer;
+  position: relative;
+  color: white;
+}
+
+.feature-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+  border-radius: 14px;
+}
+
+.feature-card * {
+  position: relative;
+  z-index: 2;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+}
+
+.feature-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 14px 14px 0 0;
+  margin-bottom: 14px;
+}
+
+.feature-card h3 {
+  font-size: 1.25rem;
+  margin: 10px 0;
+  color: #ffffff;
+}
+
+.feature-card p {
+  font-size: 0.95rem;
+  color: #aab2c8;
+  margin-top: 0;
+}
+
+.travel-card {
+  background-image: url("assets/images/travel.jpg");
+}
+
+.resume-card {
+  background-image: url("assets/images/resume.jpg");
+}
+
+.contact-card {
+  background-image: url("assets/images/contact.jpg");
+}
+
+/*footer*/
 .home-footer {
   padding: 26px 0 32px;
   border-top: 1px solid #1c1c26;
