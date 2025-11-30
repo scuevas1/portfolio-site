@@ -344,113 +344,106 @@ section {
 /*travel*/
 .travel-page {
   width: 100%;
-  max-width: 1200px;
+  max-width: 100%;
+  padding: 110px 40px;
   margin: 0 auto;
-  padding: 120px 20px 60px;
+  display: block;
 }
 
 .travel-hero {
-  height: 260px;
-  border-radius: 14px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   text-align: center;
   margin-bottom: 40px;
-  background-blend-mode: darken;
-  background-color: rgba(0,0,0,0.4);
 }
 
 .travel-hero h1 {
   font-size: 2.4rem;
-  margin-bottom: 8px;
+  color: #4cc9ff;
+  text-shadow: 0 0 12px rgba(76,201,255,0.7);
 }
 
 .travel-hero p {
   font-size: 1.1rem;
-  color: #c2c6d6;
+  color: #8ea1bf;
+  margin-top: 6px;
 }
 
 .travel-controls {
   display: flex;
   justify-content: center;
-  gap: 16px;
-  margin-bottom: 30px;
+  gap: 12px;
+  margin-bottom: 35px;
 }
 
 .travel-search,
 .travel-select {
-  padding: 10px 14px;
+  padding: 10px 12px;
   border-radius: 8px;
-  background: #10172b;
+  background: #0e1321;
   color: white;
-  border: 1px solid #2a3555;
+  border: 1px solid #24304b;
   outline: none;
 }
 
 .travel-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-  gap: 28px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
   width: 100%;
-  margin: 30px auto 0;
 }
 
 .travel-card {
-  cursor: pointer;
-  background: #0f162b;
-  border: 1px solid #1e2b45;
+  position: relative;
   border-radius: 12px;
   overflow: hidden;
-  transition: 0.3s ease;
-  position: relative;
+  transition: 0.3s;
+  background: #0f162b;
+  border: 1px solid transparent;
 }
 
 .travel-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 4px 14px rgba(0,0,0,0.45);
+  border-color: #4cc9ff;
+  box-shadow: 0 0 18px rgba(76,201,255,0.3);
 }
 
-.travel-card-img {
+.travel-img {
   width: 100%;
-  height: 200px;
+  height: 300px;
   object-fit: cover;
-  transition: 0.4s ease;
+  display: block;
+  filter: brightness(0.75);
+  transition: 0.35s ease;
 }
 
-.travel-card:hover .travel-card-img {
+.travel-card:hover .travel-img {
   transform: scale(1.06);
+  filter: brightness(0.95);
 }
 
-.travel-card-body {
-  padding: 16px;
+.travel-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 18px 14px;
+  background: linear-gradient(to top, rgba(0,0,0,0.75), transparent);
 }
 
-.travel-badge {
-  background: #2969e6;
-  padding: 4px 10px;
-  font-size: 0.75rem;
-  border-radius: 14px;
-  margin-bottom: 8px;
-  display: inline-block;
+.travel-overlay h2 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 1.3rem;
+  letter-spacing: 0.5px;
 }
 
-.travel-card-year {
-  color: #9da3bd;
-  font-size: 0.9rem;
+.travel-overlay p {
+  margin: 3px 0;
+  font-size: 0.95rem;
+  color: #c7d2e0;
 }
 
-.fade-up {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeUp 0.6s forwards ease-out;
-}
-
-@keyframes fadeUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.travel-overlay span {
+  font-size: 0.8rem;
+  color: #4cc9ff;
 }
 
 /*travel details*/
@@ -512,4 +505,89 @@ section {
   height: 400px;
   object-fit: cover;
   border-radius: 12px;
+}
+
+/*resume*/
+.resume-page {
+  padding: 100px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+  color: #e8edff;
+}
+
+.resume-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.resume-title {
+  font-size: 2.4rem;
+  color: #4cc9ff;
+  text-shadow: 0 0 12px rgba(76, 201, 255, 0.7);
+}
+
+.resume-sub {
+  color: #8ea1bf;
+  font-size: 1rem;
+}
+
+.resume-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.resume-card {
+  background: #0f1422;
+  padding: 16px;
+  border-radius: 8px;
+  line-height: 1.4;
+  transition: 0.25s;
+  border: 1px solid rgba(76, 201, 255, 0.25);
+  box-shadow: 0 0 12px rgba(76, 201, 255, 0.15);
+}
+
+.resume-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 18px rgba(76, 201, 255, 0.35);
+  border-color: #4cc9ff;
+}
+
+.neon-border {
+  border-left: 3px solid #4cc9ff;
+}
+
+.resume-section-label {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  color: #4cc9ff;
+  margin-bottom: 10px;
+}
+
+.resume-left,
+.resume-right {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skills-grid span {
+  background: #121a2e;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid rgba(76, 201, 255, 0.3);
+  font-size: 0.8rem;
+  transition: 0.2s;
+}
+
+.skills-grid span:hover {
+  background: #1c2945;
+  box-shadow: 0 0 8px rgba(76, 201, 255, 0.4);
 }
