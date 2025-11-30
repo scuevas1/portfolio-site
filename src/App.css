@@ -370,3 +370,28 @@ section {
   font-size: 1.1rem;
   color: #c2c6d6;
 }
+
+.travel-controls {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.travel-search,
+.travel-select {
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: #10172b;
+  color: white;
+  border: 1px solid #2a3555;
+  outline: none;
+}
+
+.travel-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 28px;
+  width: 100%;
+  margin: 30px auto 0;
+}
