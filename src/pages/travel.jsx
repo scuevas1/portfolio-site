@@ -1,19 +1,14 @@
 import { useState } from "react";
 import travelData from "../components/travelData.json";
 import TravelCard from "../components/travelCard";
+import { filterAndSort } from "../utils/travel";
 import "../App.css";
 
 export default function Travel() {
   const [search, setSearch] = useState("");
   const [sortOrder, setSortOrder] = useState("desc");
 
-  const filteredData = travelData
-    .filter(item =>
-      item.country.toLowerCase().includes(search.toLowerCase())
-    )
-    .sort((a, b) =>
-      sortOrder === "asc" ? a.year - b.year : b.year - a.year
-    );
+  const filteredData = filterAndSort(travelData, search, sortOrder);
 
   return (
     <div className="travel-page">
