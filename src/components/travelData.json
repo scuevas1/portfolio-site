@@ -4,11 +4,79 @@
     "slug": "spain-barcelona",
     "country": "Spain",
     "city": "Barcelona",
-    "year": 2022,
+    "year": 2021,
     "story": "Spain was an unforgettable experience with amazing culture and food.",
     "photos": [
       { "url": "/travel/spain1.jpg", "caption": "Park Guell" },
-      { "url": "/travel/spain2.jpg", "caption": "La Sagrada Famila" }
+      { "url": "/travel/spain2.jpg", "caption": "La Sagrada Familia" }
+    ]
+  },
+  {
+    "id": 2,
+    "slug": "netherlands-amsterdam",
+    "country": "Netherlands",
+    "city": "Amsterdam",
+    "year": 2022,
+    "story": "Exploring canals, bikes everywhere, and incredible architecture.",
+    "photos": [
+      { "url": "/travel/amsterdam1.jpg", "caption": "Amsterdam Canals" },
+      { "url": "/travel/amsterdam2.jpg", "caption": "City Streets" }
+    ]
+  },
+  {
+    "id": 3,
+    "slug": "belgium-brussels",
+    "country": "Belgium",
+    "city": "Brussels",
+    "year": 2022,
+    "story": "Beautiful buildings, waffles, and amazing old-town squares.",
+    "photos": [
+      { "url": "/travel/brussels1.jpg", "caption": "Grand Place" }
+    ]
+  },
+  {
+    "id": 4,
+    "slug": "puerto-rico",
+    "country": "Puerto Rico",
+    "city": "San Juan",
+    "year": 2025,
+    "story": "The culture, ocean, food, and the island vibes were unforgettable.",
+    "photos": [
+      { "url": "/travel/puerto1.jpg", "caption": "Old San Juan" },
+      { "url": "/travel/puerto2.jpg", "caption": "Beach" }
+    ]
+  },
+  {
+    "id": 5,
+    "slug": "germany-ramstein",
+    "country": "Germany",
+    "city": "Ramstein",
+    "year": 2022,
+    "story": "Visited the military base and experienced local German sights.",
+    "photos": [
+      { "url": "/travel/ramstein1.jpg", "caption": "Ramstein Base" }
+    ]
+  },
+  {
+    "id": 6,
+    "slug": "france-nice",
+    "country": "France",
+    "city": "Nice",
+    "year": 2022,
+    "story": "The French Riviera was beautiful—crystal blue waters and warm weather.",
+    "photos": [
+      { "url": "/travel/nice1.jpg", "caption": "Nice Beach" }
+    ]
+  },
+  {
+    "id": 7,
+    "slug": "spain-mallorca",
+    "country": "Spain",
+    "city": "Mallorca",
+    "year": 2022,
+    "story": "Tropical scenery, beaches, and unforgettable island views.",
+    "photos": [
+      { "url": "/travel/mallorca1.jpg", "caption": "Mallorca Coast" }
     ]
   }
 ]

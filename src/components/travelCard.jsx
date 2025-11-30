@@ -1,24 +1,24 @@
 import { useNavigate } from "react-router-dom";
 
-export default function TravelCard({ place }) {
+export default function TravelCard({ place, index }) {
   const navigate = useNavigate();
 
   return (
     <div
-      className="travel-card"
+      className="travel-card fade-up"
+      style={{ animationDelay: `${index * 0.15}s` }}
       onClick={() => navigate(`/travel/${place.slug}`)}
     >
-      <div className="travel-card-image">
-        <img src={place.photos[0].url} alt={place.country} />
-      </div>
+      <img
+        src={place.photos[0].url}
+        alt={place.country}
+        className="travel-card-img"
+      />
 
       <div className="travel-card-body">
-        <h2>{place.country}</h2>
-        <p className="travel-card-city">{place.city}</p>
+        <span className="travel-badge">{place.country}</span>
+        <h2>{place.city}</h2>
         <p className="travel-card-year">{place.year}</p>
-        <p className="travel-card-preview">
-          {place.story.substring(0, 80)}...
-        </p>
       </div>
     </div>
   );

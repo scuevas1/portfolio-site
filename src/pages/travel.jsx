@@ -1,33 +1,49 @@
 import { useState } from "react";
 import travelData from "../components/travelData.json";
 import TravelCard from "../components/travelCard";
+import "../App.css";
 
 export default function Travel() {
   const [search, setSearch] = useState("");
   const [sortOrder, setSortOrder] = useState("desc");
 
   const filteredData = travelData
-    .filter(p => p.country.toLowerCase().includes(search.toLowerCase()))
-    .sort((a, b) => sortOrder === "asc" ? a.year - b.year : b.year - a.year);
+    .filter(item =>
+      item.country.toLowerCase().includes(search.toLowerCase())
+    )
+    .sort((a, b) =>
+      sortOrder === "asc" ? a.year - b.year : b.year - a.year
+    );
 
   return (
     <div className="travel-page">
-      <h1>Travel</h1>
 
-      <input 
-        placeholder="Search..." 
-        value={search}
-        onChange={(e) => setSearch(e.target.value)}
-      />
+      <div className="travel-hero">
+        <h1>Travel Gallery</h1>
+        <p>Places I’ve explored and photographed around the world</p>
+      </div>
 
-      <select onChange={(e) => setSortOrder(e.target.value)}>
-        <option value="desc">Newest</option>
-        <option value="asc">Oldest</option>
-      </select>
+      <div className="travel-controls">
+        <input
+          className="travel-search"
+          placeholder="Search by country..."
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+        />
+
+        <select
+          className="travel-select"
+          value={sortOrder}
+          onChange={(e) => setSortOrder(e.target.value)}
+        >
+          <option value="desc">Newest</option>
+          <option value="asc">Oldest</option>
+        </select>
+      </div>
 
       <div className="travel-grid">
-        {filteredData.map(place => (
-            <TravelCard key={place.id} place={place} />
+        {filteredData.map((place, i) => (
+          <TravelCard key={place.id} place={place} index={i} />
         ))}
       </div>
     </div>
