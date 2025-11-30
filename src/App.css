@@ -306,15 +306,15 @@ section {
 }
 
 .travel-card {
-  background-image: url("assets/images/travel.jpg");
+  background-image: url("public/images/travel.jpg");
 }
 
 .resume-card {
-  background-image: url("assets/images/resume.jpg");
+  background-image: url("public/images/resume.jpg");
 }
 
 .contact-card {
-  background-image: url("assets/images/contact.jpg");
+  background-image: url("public/images/contact.jpg");
 }
 
 /*footer*/
@@ -451,4 +451,85 @@ section {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/*travel details*/
+.travel-details-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 90px 20px 70px;
+  position: relative;
+}
+
+.back-fab {
+  position: fixed;
+  top: 80px;
+  left: 24px;
+  background: rgba(7, 11, 24, 0.9);
+  border: 1px solid #3a486b;
+  color: #e9edf7;
+  padding: 6px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  z-index: 20;
+  backdrop-filter: blur(8px);
+  transition: 0.2s ease;
+}
+
+.back-fab:hover {
+  background: #11182e;
+  transform: translateY(-1px);
+}
+
+.details-hero {
+  height: 60vh;
+  min-height: 360px;
+  border-radius: 16px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  margin-bottom: 40px;
+}
+
+.details-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(3, 7, 18, 0.9),
+    rgba(3, 7, 18, 0.1)
+  );
+}
+
+.details-hero-overlay {
+  position: absolute;
+  bottom: 22px;
+  left: 22px;
+  right: 22px;
+  padding: 20px;
+  border-radius: 14px;
+  background: rgba(5, 10, 25, 0.55);
+  backdrop-filter: blur(10px);
+}
+
+.details-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #a9b5ff;
+  margin-bottom: 6px;
+}
+
+.details-hero-title {
+  font-size: 2.4rem;
+  margin: 0 0 4px;
+}
+
+.details-meta {
+  font-size: 0.95rem;
+  color: #c3cadf;
 }

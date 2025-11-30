@@ -7,7 +7,7 @@
     "year": 2021,
     "story": "Spain was an unforgettable experience with amazing culture and food.",
     "photos": [
-      { "url": "/travel/spain1.jpg", "caption": "Park Guell" },
+      { "url": "public/images/barcelona1.jpeg", "caption": "Park Guell" },
       { "url": "/travel/spain2.jpg", "caption": "La Sagrada Familia" }
     ]
   },
@@ -19,7 +19,7 @@
     "year": 2022,
     "story": "Exploring canals, bikes everywhere, and incredible architecture.",
     "photos": [
-      { "url": "/travel/amsterdam1.jpg", "caption": "Amsterdam Canals" },
+      { "url": "images/amsterdam1.jpg", "caption": "Amsterdam Canals" },
       { "url": "/travel/amsterdam2.jpg", "caption": "City Streets" }
     ]
   },
@@ -31,7 +31,7 @@
     "year": 2022,
     "story": "Beautiful buildings, waffles, and amazing old-town squares.",
     "photos": [
-      { "url": "/travel/brussels1.jpg", "caption": "Grand Place" }
+      { "url": "images/brussels1.jpg", "caption": "Grand Place" }
     ]
   },
   {
@@ -42,7 +42,7 @@
     "year": 2025,
     "story": "The culture, ocean, food, and the island vibes were unforgettable.",
     "photos": [
-      { "url": "/travel/puerto1.jpg", "caption": "Old San Juan" },
+      { "url": "images/puerto1.jpg", "caption": "Old San Juan" },
       { "url": "/travel/puerto2.jpg", "caption": "Beach" }
     ]
   },
@@ -54,7 +54,7 @@
     "year": 2022,
     "story": "Visited the military base and experienced local German sights.",
     "photos": [
-      { "url": "/travel/ramstein1.jpg", "caption": "Ramstein Base" }
+      { "url": "images/ramstein1.jpg", "caption": "Ramstein Base" }
     ]
   },
   {
@@ -65,7 +65,7 @@
     "year": 2022,
     "story": "The French Riviera was beautiful—crystal blue waters and warm weather.",
     "photos": [
-      { "url": "/travel/nice1.jpg", "caption": "Nice Beach" }
+      { "url": "images/nice1.jpg", "caption": "Nice Beach" }
     ]
   },
   {
@@ -76,7 +76,7 @@
     "year": 2022,
     "story": "Tropical scenery, beaches, and unforgettable island views.",
     "photos": [
-      { "url": "/travel/mallorca1.jpg", "caption": "Mallorca Coast" }
+      { "url": "public/images/mallorca1.jpg", "caption": "Mallorca Coast" }
     ]
   }
 ]

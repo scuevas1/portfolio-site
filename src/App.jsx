@@ -7,6 +7,7 @@ import Home from "./pages/home.jsx";
 import Resume from "./pages/resume.jsx";
 import Contact from "./pages/contact.jsx";
 import Travel from "./pages/travel.jsx";
+import TravelDetails from "./pages/travelDetails.jsx";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/travel" element={<Travel />} />
+          <Route path="/travel/:slug" element={<TravelDetails />} />
         </Routes>
 
         <Footer />
