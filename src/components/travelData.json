@@ -5,10 +5,11 @@
     "country": "Spain",
     "city": "Barcelona",
     "year": 2021,
-    "story": "Spain was an unforgettable experience with amazing culture and food.",
+    "story": "Barcelona was one of my favorite places I’ve ever visited. The architecture is insane and looks better in person than in any picture. La Sagrada Familia doesn’t feel real when you’re standing in front of it. I loved just walking around and exploring different parts of the city. The food was really good, especially the tapas and pastries. The whole vibe of the city is chill but still full of life. It was one of those trips where you think “I need to come back again.”",
     "photos": [
-      { "url": "public/images/barcelona1.jpeg", "caption": "Park Guell" },
-      { "url": "/travel/spain2.jpg", "caption": "La Sagrada Familia" }
+      { "url": "/images/barcelona1.jpeg", "caption": "La Sagrada Familia" },
+      { "url": "/images/barcelona2.jpg", "caption": "Park Guell" },
+      { "url": "/images/barcelona3.jpg", "caption": "Barcelona Streets" }
     ]
   },
   {
@@ -17,10 +18,12 @@
     "country": "Netherlands",
     "city": "Amsterdam",
     "year": 2022,
-    "story": "Exploring canals, bikes everywhere, and incredible architecture.",
+    "story": "Amsterdam really surprised me. It’s one of those cities where you never run out of things to look at. The canals, the buildings, and the small streets all feel like something out of a movie. I liked how everyone bikes everywhere and how easy it was to walk around. The people were nice and the food was great. It felt like a place where you could stay for weeks and still find new things to do. The city has its own personality.",
     "photos": [
-      { "url": "images/amsterdam1.jpg", "caption": "Amsterdam Canals" },
-      { "url": "/travel/amsterdam2.jpg", "caption": "City Streets" }
+      { "url": "/images/amsterdam1.jpg", "caption": "Amsterdam Canals" },
+      { "url": "/images/amsterdam2.jpg", "caption": "Amsterdam Canals" },
+      { "url": "/images/amsterdam3.jpg", "caption": "Dam Square" }
+
     ]
   },
   {
@@ -29,9 +32,11 @@
     "country": "Belgium",
     "city": "Brussels",
     "year": 2022,
-    "story": "Beautiful buildings, waffles, and amazing old-town squares.",
+    "story": "Brussels was super laid back but beautiful at the same time. The Grand Place looks crazy in person, especially at night. Everything is walkable and the city has a very cozy feeling. The waffles and chocolate are obviously a big deal and yes, they really are better there. It’s not as busy or chaotic as other places which I liked. It felt like a calm city with a lot of history.",
     "photos": [
-      { "url": "images/brussels1.jpg", "caption": "Grand Place" }
+      { "url": "/images/brussels1.jpg", "caption": "Grand Place" },
+      { "url": "/images/brussels2.jpg", "caption": "Brussels Streets" },
+      { "url": "/images/brussels3.jpg", "caption": "Belgian Waffles" }
     ]
   },
   {
@@ -40,10 +45,12 @@
     "country": "Puerto Rico",
     "city": "San Juan",
     "year": 2025,
-    "story": "The culture, ocean, food, and the island vibes were unforgettable.",
+    "story": "Puerto Rico felt special to me. The beaches and the water were amazing, but Old San Juan was the best part. The colorful buildings, the music, the food, and the streets had so much culture. It felt familiar and different at the same time. I liked how alive the island feels. It’s not just a vacation spot, it feels like a place you want to get to know more. I definitely want to go back.",
     "photos": [
-      { "url": "images/puerto1.jpg", "caption": "Old San Juan" },
-      { "url": "/travel/puerto2.jpg", "caption": "Beach" }
+      { "url": "/images/puerto1.jpg", "caption": "Beach" },
+      { "url": "/images/puerto2.jpg", "caption": "Viejo San Juan" },
+      { "url": "/images/puerto3.jpg", "caption": "El Morro" }
+
     ]
   },
   {
@@ -52,9 +59,11 @@
     "country": "Germany",
     "city": "Ramstein",
     "year": 2022,
-    "story": "Visited the military base and experienced local German sights.",
+    "story": "Ramstein was a different kind of trip. Visiting the military base and seeing how people live there was really interesting. The area around the base was peaceful and calm. The views and nature were beautiful and the small towns felt very clean and quiet. It was a slower trip but in a good way. I liked seeing a part of Germany most people don’t talk about.",
     "photos": [
-      { "url": "images/ramstein1.jpg", "caption": "Ramstein Base" }
+      { "url": "/images/ramstein1.jpg", "caption": "Village buildings" },
+      { "url": "/images/ramstein2.jpg", "caption": "U.S Air Base" },
+      { "url": "/images/ramstein3.jpg", "caption": "Ramstein Streets" }
     ]
   },
   {
@@ -63,9 +72,11 @@
     "country": "France",
     "city": "Nice",
     "year": 2022,
-    "story": "The French Riviera was beautiful—crystal blue waters and warm weather.",
+    "story": "Nice was exactly what I expected and more. The beaches and the water were the best part. The city is beautiful and the weather makes everything feel better. The food and bakeries were amazing and the views along the coast were unreal. It was one of those places where you just enjoy every moment without trying too hard to plan anything.",
     "photos": [
-      { "url": "images/nice1.jpg", "caption": "Nice Beach" }
+      { "url": "/images/nice1.jpg", "caption": "Nice Beach" },
+      { "url": "/images/nice2.jpg", "caption": "Nice River" },
+      { "url": "/images/nice3.jpg", "caption": "Nice Cafe" }
     ]
   },
   {
@@ -74,9 +85,11 @@
     "country": "Spain",
     "city": "Mallorca",
     "year": 2022,
-    "story": "Tropical scenery, beaches, and unforgettable island views.",
+    "story": "Mallorca felt like a dream island. The water was so clear and the beaches were everywhere. Driving around the island and finding new spots was the most fun. The weather, the scenery, and the food made it one of my favorite trips. It has a mix of relaxing and exciting and it just felt like a place you don’t want to leave.",
     "photos": [
-      { "url": "public/images/mallorca1.jpg", "caption": "Mallorca Coast" }
+      { "url": "/images/mallorca1.JPG", "caption": "Mallorca Streets" },
+      { "url": "/images/mallorca2.jpg", "caption": "Mallorca Castle" },
+      { "url": "/images/mallorca3.jpg", "caption": "Mallorca Beach" }
     ]
   }
 ]
