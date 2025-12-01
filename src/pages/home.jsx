@@ -62,20 +62,20 @@ export default function Home() {
         <h2 className="section-title">Explore</h2>
 
         <div className="feature-grid">
-          <a href="/travel" className="feature-card feature-travel-card">
+          <Link to="/travel" className="feature-card feature-travel-card">
             <h3>Travel</h3>
             <p>Places I’ve visited and captured.</p>
-          </a>
+          </Link>
 
-          <a href="/resume" className="feature-card feature-resume-card">
+          <Link to="/resume" className="feature-card feature-resume-card">
             <h3>Resume</h3>
             <p>Skills, experience and education.</p>
-          </a>
+          </Link>
 
-          <a href="/contact" className="feature-card feature-contact-card">
+          <Link to="/contact" className="feature-card feature-contact-card">
             <h3>Contact</h3>
             <p>Connect with me professionally.</p>
-          </a>
+          </Link>
         </div>
       </section>
     </div>
