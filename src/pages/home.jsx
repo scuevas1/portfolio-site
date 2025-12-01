@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useTypedName } from "../utils/home";
+import { Link } from "react-router-dom";
 import "../App.css";
 
 export default function Home() {
@@ -61,22 +62,23 @@ export default function Home() {
       <section className="featured-section fade-in">
         <h2 className="section-title">Explore</h2>
 
-        <div className="feature-grid">
-          <Link to="/travel" className="feature-card feature-travel-card">
-            <h3>Travel</h3>
-            <p>Places I’ve visited and captured.</p>
-          </Link>
+      <div className="feature-grid">
+        <Link to="/travel" className="feature-card feature-travel-card">
+          <h3>Travel</h3>
+          <p>Places I’ve visited and captured.</p>
+        </Link>
 
-          <Link to="/resume" className="feature-card feature-resume-card">
-            <h3>Resume</h3>
-            <p>Skills, experience and education.</p>
-          </Link>
+        <Link to="/resume" className="feature-card feature-resume-card">
+          <h3>Resume</h3>
+          <p>Skills, experience and education.</p>
+        </Link>
 
-          <Link to="/contact" className="feature-card feature-contact-card">
-            <h3>Contact</h3>
-            <p>Connect with me professionally.</p>
-          </Link>
-        </div>
+        <Link to="/contact" className="feature-card feature-contact-card">
+          <h3>Contact</h3>
+          <p>Connect with me professionally.</p>
+        </Link>
+      </div>
+
       </section>
     </div>
   );
