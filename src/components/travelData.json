@@ -9,7 +9,10 @@
     "photos": [
       { "url": "/images/barcelona1.jpeg", "caption": "La Sagrada Familia" },
       { "url": "/images/barcelona2.jpg", "caption": "Park Guell" },
-      { "url": "/images/barcelona3.jpg", "caption": "Barcelona Streets" }
+      { "url": "/images/barcelona3.jpg", "caption": "Barcelona Streets" },
+      { "url": "/images/barcelona4.jpeg", "caption": "Barcelona - L'Antigua Esquerra de I-Eixample" },
+      { "url": "/images/barcelona5.jpeg", "caption": "Inside of La Sagrada Familia" },
+      { "url": "/images/barcelona6.jpeg", "caption": "Barcelona Streets" }
     ]
   },
   {
@@ -22,7 +25,10 @@
     "photos": [
       { "url": "/images/amsterdam1.jpg", "caption": "Amsterdam Canals" },
       { "url": "/images/amsterdam2.jpg", "caption": "Amsterdam Canals" },
-      { "url": "/images/amsterdam3.jpg", "caption": "Dam Square" }
+      { "url": "/images/amsterdam3.jpg", "caption": "Dam Square" },
+      { "url": "/images/amsterdam4.JPG", "caption": "Amsterdam Canals" },
+      { "url": "/images/amsterdam5.JPG", "caption": "Amsterdam Streets" },
+      { "url": "/images/amsterdam6.JPG", "caption": "Dam Square" }
 
     ]
   },
@@ -36,7 +42,10 @@
     "photos": [
       { "url": "/images/brussels1.jpg", "caption": "Grand Place" },
       { "url": "/images/brussels2.jpg", "caption": "Brussels Streets" },
-      { "url": "/images/brussels3.jpg", "caption": "Belgian Waffles" }
+      { "url": "/images/brussels3.jpg", "caption": "Belgian Waffles" },
+      { "url": "/images/brussels4.jpg", "caption": "Royal Quarter" },
+      { "url": "/images/brussels5.JPG", "caption": "Pentagone" },
+      { "url": "/images/brussels7.JPG", "caption": "Royal Quarter" }
     ]
   },
   {
@@ -49,7 +58,10 @@
     "photos": [
       { "url": "/images/puerto1.jpg", "caption": "Beach" },
       { "url": "/images/puerto2.jpg", "caption": "Viejo San Juan" },
-      { "url": "/images/puerto3.jpg", "caption": "El Morro" }
+      { "url": "/images/puerto3.jpg", "caption": "El Morro" },
+      { "url": "/images/puerto4.jpeg", "caption": "Sushi in Puerto Rico" },
+      { "url": "/images/puerto5.jpeg", "caption": "Streets of El Viejo San Juan" },
+      { "url": "/images/puerto7.jpeg", "caption": "Streets of El Viejo San Juan" }
 
     ]
   },
@@ -63,7 +75,10 @@
     "photos": [
       { "url": "/images/ramstein1.jpg", "caption": "Village buildings" },
       { "url": "/images/ramstein2.jpg", "caption": "U.S Air Base" },
-      { "url": "/images/ramstein3.jpg", "caption": "Ramstein Streets" }
+      { "url": "/images/ramstein3.jpg", "caption": "Ramstein Streets" },
+      { "url": "/images/ramstein4.JPG", "caption": "Food in Ramstein" },
+      { "url": "/images/ramstein6.JPG", "caption": "Ramstein Streets" },
+      { "url": "/images/ramstein7.JPG", "caption": "Ramstein Streets" }
     ]
   },
   {
@@ -76,7 +91,10 @@
     "photos": [
       { "url": "/images/nice1.jpg", "caption": "Nice Beach" },
       { "url": "/images/nice2.jpg", "caption": "Nice River" },
-      { "url": "/images/nice3.jpg", "caption": "Nice Cafe" }
+      { "url": "/images/nice3.jpg", "caption": "Nice Cafe" },
+      { "url": "/images/nice4.JPG", "caption": "Nice Streets" },
+      { "url": "/images/nice5.jpeg", "caption": "Nice Streets" },
+      { "url": "/images/nice6.jpeg", "caption": "La Ville De Nice" }
     ]
   },
   {
@@ -89,7 +107,26 @@
     "photos": [
       { "url": "/images/mallorca1.JPG", "caption": "Mallorca Streets" },
       { "url": "/images/mallorca2.jpg", "caption": "Mallorca Castle" },
-      { "url": "/images/mallorca3.jpg", "caption": "Mallorca Beach" }
+      { "url": "/images/mallorca3.jpg", "caption": "Mallorca Beach" },
+      { "url": "/images/mallorca4.JPG", "caption": "Mallorca Beach" },
+      { "url": "/images/mallorca5.JPG", "caption": "Paella in Mallorca" },
+      { "url": "/images/mallorca6.JPG", "caption": "Palacio Real de La Almudaina" }
+    ]
+  },
+    {
+    "id": 7,
+    "slug": "strasbourg-france",
+    "country": "France",
+    "city": "Strasbourg",
+    "year": 2021,
+    "story": "Strasbourg felt like a fairytale city with a calm vibe. The mix of French and German culture was everywhere and the buildings looked straight out of a storybook. Walking through Petite France and seeing the cathedral was unforgettable. It was peaceful, beautiful, and one of those places I’d go back to without thinking twice.",
+    "photos": [
+      { "url": "/images/strasbourg1.JPG", "caption": "Quartier Bourse" },
+      { "url": "/images/strasbourg2.JPG", "caption": "Strausbourg Cathedral" },
+      { "url": "/images/strasbourg3.JPG", "caption": "Grand Ile" },
+      { "url": "/images/strasbourg4.JPG", "caption": "Strausbourg Streets" },
+      { "url": "/images/strasbourg5.JPG", "caption": "Food in Strausbourg" },
+      { "url": "/images/strasbourg6.JPG", "caption": "Boba tea in Strausbourg" }
     ]
   }
 ]

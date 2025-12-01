@@ -37,10 +37,9 @@ export default function Travel() {
     <div className="travel-page">
       <div className="travel-hero">
         <h1>Travel Gallery</h1>
-        <p>Places I’ve explored, photographed, and lowkey want to go back to.</p>
+        <p>Places I’ve explored, photographed, and would love to go back to.</p>
       </div>
 
-      {/* control panel */}
       <div className="travel-controls">
         <div className="travel-controls-main">
           <div className="travel-search-group">
