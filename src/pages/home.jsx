@@ -30,7 +30,7 @@ export default function Home() {
 
           <div className="home-actions fade-in-delay">
             <a href="#about" className="btn-primary scroll-link">Learn More</a>
-            <a href="/resume" className="btn-secondary">View Resume</a>
+            <Link to="/resume" className="btn-secondary">View Resume</Link>
           </div>
         </div>
       </header>
