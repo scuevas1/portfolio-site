@@ -13,6 +13,11 @@ body,
   min-height: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     sans-serif;
@@ -206,13 +211,22 @@ body {
   transform: translateY(-2px);
 }
 
+.scroll-link {
+  scroll-margin-top: 70px;
+}
+
 section {
   padding: 70px 20px;
 }
 
 .about-me {
-  max-width: 900px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  max-width: 1100px;
   margin: 0 auto;
+  padding: 40px 0;
 }
 
 .about-title {
@@ -222,13 +236,36 @@ section {
   color: #b7b9ff;
 }
 
-.about-text {
-  font-size: 17px;
-  color: #d1d5db;
-  margin-bottom: 12px;
+.about-section {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
 
-  opacity: 0;
-  animation: fadeInUp 0.8s ease forwards;
+.about-text {
+  flex: 1;
+}
+
+.about-photo {
+  width: 260px;
+  height: 260px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 0 15px rgba(76, 201, 255, .4);
+  border: 2px solid #4cc9ff;
+}
+
+@media (max-width: 800px) {
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-photo {
+    width: 220px;
+    height: 220px;
+  }
 }
 
 @keyframes fadeInUp {
@@ -244,9 +281,10 @@ section {
 
 .feature-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 28px;
-  margin-top: 40px;
+  grid-template-columns: repeat(3,1fr);
+  gap: 24px;
+  width: 100%;
+  margin-top: 50px;
 }
 
 .feature-card {
@@ -305,17 +343,18 @@ section {
   margin-top: 0;
 }
 
-.travel-card {
-  background-image: url("public/images/travel.jpg");
+.feature-travel-card {
+  background-image: url("/images/travel.jpg");
 }
 
-.resume-card {
-  background-image: url("public/images/resume.jpg");
+.feature-resume-card {
+  background-image: url("/images/resume.jpg");
 }
 
-.contact-card {
-  background-image: url("public/images/contact.jpg");
+.feature-contact-card {
+  background-image: url("/images/contact.jpg");
 }
+
 
 /*footer*/
 .home-footer {

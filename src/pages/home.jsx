@@ -28,47 +28,51 @@ export default function Home() {
           </p>
 
           <div className="home-actions fade-in-delay">
-            <a href="#about" className="btn-primary">Learn More</a>
+            <a href="#about" className="btn-primary scroll-link">Learn More</a>
             <a href="/resume" className="btn-secondary">View Resume</a>
           </div>
         </div>
       </header>
 
       <section className="about-me fade-in" id="about">
-        <h2 className="about-title">ABOUT ME</h2>
+        <div className="about-text">
+          <h2 className="about-title">ABOUT ME</h2>
+          <p>
+            My name is Suheily Cuevas, and I'm a proud Puerto Rican and Mexican woman
+            from Chicago, IL. I'm pursuing both my bachelor's and master's degrees 
+            in Information Technology & Management at Illinois Tech.
+          </p>
 
-        <p className="about-text">
-          My name is Suheily Cuevas, and I'm a proud Puerto Rican and Mexican woman
-          from Chicago, IL. I'm pursuing both my bachelor's and master's degrees 
-          in Information Technology & Management at Illinois Tech.
-        </p>
+          <p>
+            My focus is networking and systems administration. I love solving technical
+            problems, building systems, and learning how technology empowers people.
+          </p>
 
-        <p className="about-text">
-          My focus is networking and systems administration. I love solving technical
-          problems, building systems, and learning how technology empowers people.
-        </p>
-
-        <p className="about-text">
-          Outside of school and work, I love exploring Chicago’s food scene, 
-          traveling, and going to concerts. Music + tech are my favorite combo.
-        </p>
+          <p>
+            Outside of school and work, I love exploring Chicago’s food scene, 
+            traveling, and going to concerts. Music + tech are my favorite combo.
+          </p>
+        </div>
+        <div className="about-photo-wrapper">
+          <img src="/images/baby.jpg" className="about-photo" />
+        </div>
       </section>
 
       <section className="featured-section fade-in">
         <h2 className="section-title">Explore</h2>
 
         <div className="feature-grid">
-          <a href="/travel" className="feature-card travel-card">
+          <a href="/travel" className="feature-card feature-travel-card">
             <h3>Travel</h3>
             <p>Places I’ve visited and captured.</p>
           </a>
 
-          <a href="/resume" className="feature-card resume-card">
+          <a href="/resume" className="feature-card feature-resume-card">
             <h3>Resume</h3>
             <p>Skills, experience and education.</p>
           </a>
 
-          <a href="/contact" className="feature-card contact-card">
+          <a href="/contact" className="feature-card feature-contact-card">
             <h3>Contact</h3>
             <p>Connect with me professionally.</p>
           </a>
