@@ -593,3 +593,51 @@ section {
 }
 
 /*contact*/
+.contact-page {
+  padding: 110px 20px;
+  max-width: 1300px;
+  margin: 0 auto;
+  color: #e8edff;
+}
+
+.contact-hero {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contact-hero h1 {
+  font-size: 2.6rem;
+  color: #4cc9ff;
+  text-shadow: 0 0 14px rgba(76, 201, 255, 0.7);
+}
+
+.contact-hero p {
+  color: #8ea1bf;
+  margin-top: 6px;
+  font-size: 1.05rem;
+}
+
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+
+  @media (max-width: 800px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.contact-card {
+  background: rgba(17, 24, 39, 0.75);
+  backdrop-filter: blur(8px);
+  padding: 24px;
+  border-radius: 12px;
+  border: 1px solid #24304b;
+  box-shadow: 0 0 14px rgba(76, 201, 255, 0.15);
+}
+
+.contact-card h2 {
+  color: #4cc9ff;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
