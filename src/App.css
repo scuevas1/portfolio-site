@@ -377,60 +377,152 @@ section {
 /*travel*/
 .travel-page {
   width: 100%;
-  max-width: 100%;
-  padding: 110px 40px;
+  padding: 110px 40px 60px;
   margin: 0 auto;
-  display: block;
 }
 
 .travel-hero {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 24px;
 }
 
 .travel-hero h1 {
   font-size: 2.4rem;
   color: #4cc9ff;
-  text-shadow: 0 0 12px rgba(76,201,255,0.7);
+  text-shadow: 0 0 12px rgba(76, 201, 255, 0.7);
 }
 
 .travel-hero p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #8ea1bf;
   margin-top: 6px;
 }
 
 .travel-controls {
-  display: flex;
-  justify-content: center;
-  gap: 12px;
-  margin-bottom: 35px;
+  background: rgba(11, 17, 35, 0.95);
+  border-radius: 16px;
+  border: 1px solid #24304b;
+  padding: 18px 18px 12px;
+  margin-bottom: 26px;
+  box-shadow: 0 0 18px rgba(12, 25, 52, 0.7);
 }
 
-.travel-search,
-.travel-select {
-  padding: 10px 12px;
+.travel-controls-main {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1.2fr) minmax(0, 1.2fr);
+  gap: 16px;
+}
+
+.travel-label {
+  display: block;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #8ea1bf;
+  margin-bottom: 4px;
+}
+
+.travel-input-shell {
+  position: relative;
+}
+
+.travel-input-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+.travel-search {
+  width: 100%;
+  padding: 9px 10px 9px 30px;
   border-radius: 8px;
-  background: #0e1321;
-  color: white;
   border: 1px solid #24304b;
-  outline: none;
+  background: #050816;
+  color: #e5ecff;
+  font-size: 0.9rem;
+}
+
+.travel-search::placeholder {
+  color: #6f7b96;
+}
+
+.sort-toggle {
+  display: inline-flex;
+  gap: 6px;
+}
+
+.sort-chip {
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid #24304b;
+  background: #050816;
+  color: #c3d0ea;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.sort-chip-active {
+  background: linear-gradient(90deg, #4cc9ff, #8264ff);
+  color: #050509;
+  border-color: transparent;
+  box-shadow: 0 0 12px rgba(76, 201, 255, 0.5);
+}
+
+.region-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.region-chip {
+  padding: 5px 10px;
+  border-radius: 999px;
+  border: 1px solid #24304b;
+  background: #050816;
+  color: #c3d0ea;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.region-chip-active {
+  background: rgba(76, 201, 255, 0.14);
+  border-color: #4cc9ff;
+  color: #e5ecff;
+}
+
+.travel-meta {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 8px;
+  font-size: 0.8rem;
+  color: #8ea1bf;
+  gap: 6px;
+}
+
+.travel-dot {
+  opacity: 0.7;
 }
 
 .travel-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 35px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
   width: 100%;
 }
 
 .travel-card {
   position: relative;
-  border-radius: 12px;
+  border-radius: 14px;
   overflow: hidden;
-  transition: 0.3s;
   background: #0f162b;
   border: 1px solid transparent;
+  transition: 0.3s;
+  height: 350px;
 }
 
 .travel-card:hover {
@@ -441,37 +533,36 @@ section {
 
 .travel-img {
   width: 100%;
-  height: 300px;
+  height: 100%;
   object-fit: cover;
-  display: block;
-  filter: brightness(0.75);
-  transition: 0.35s ease;
-}
-
-.travel-card:hover .travel-img {
-  transform: scale(1.06);
-  filter: brightness(0.95);
+  position: absolute;   
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 .travel-overlay {
   position: absolute;
+  z-index: 2;         
   bottom: 0;
   width: 100%;
-  padding: 18px 14px;
-  background: linear-gradient(to top, rgba(0,0,0,0.75), transparent);
+  padding: 12px;
+  background: linear-gradient(to top, rgba(0,0,0,0.85), transparent);
 }
 
-.travel-overlay h2 {
+.travel-overlay * {
+  line-height: 1.2;
+}
+
+.travel-overlay h2,
+.travel-overlay p,
+.travel-overlay span {
   margin: 0;
-  color: #ffffff;
-  font-size: 1.3rem;
-  letter-spacing: 0.5px;
-}
-
-.travel-overlay p {
-  margin: 3px 0;
-  font-size: 0.95rem;
-  color: #c7d2e0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: white;
+  z-index: 3;
 }
 
 .travel-overlay span {
