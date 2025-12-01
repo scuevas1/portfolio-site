@@ -520,6 +520,7 @@ section {
   grid-template-columns: repeat(4, 1fr);
   gap: 28px;
   width: 100%;
+  direction: ltr;
 }
 
 .travel-card {

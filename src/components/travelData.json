@@ -102,7 +102,7 @@
     "slug": "spain-mallorca",
     "country": "Spain",
     "city": "Mallorca",
-    "year": 2022,
+    "year": 2021,
     "story": "Mallorca felt like a dream island. The water was so clear and the beaches were everywhere. Driving around the island and finding new spots was the most fun. The weather, the scenery, and the food made it one of my favorite trips. It has a mix of relaxing and exciting and it just felt like a place you don’t want to leave.",
     "photos": [
       { "url": "/images/mallorca1.JPG", "caption": "Mallorca Streets" },
@@ -114,7 +114,7 @@
     ]
   },
     {
-    "id": 7,
+    "id": 8,
     "slug": "strasbourg-france",
     "country": "France",
     "city": "Strasbourg",
