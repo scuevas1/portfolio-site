@@ -1,5 +1,5 @@
 import { useState } from "react";
-import resumeCarousel from "../components/resumeCarousel";
+import ResumeCarousel from "../components/resumeCarousel";
 
 export default function Resume() {
   const [selectedItem, setSelectedItem] = useState(null);
@@ -20,9 +20,10 @@ export default function Resume() {
           <a href="https://linkedin.com/in/suheily-cuevas" target="_blank">LinkedIn</a>
         </div>
       </header>
-
-      <ResumeCarousel onSelect={setSelectedItem} />
-
+      <section className="resume-instructions">
+        <ResumeCarousel onSelect={setSelectedItem} />
+        <p className="resume-instruction">Click a card to view more details.</p>
+      </section>
       {selectedItem && (
         <div className="carousel-details">
           <h2 className="details-title">{selectedItem.title}</h2>
