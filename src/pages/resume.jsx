@@ -1,5 +1,5 @@
 import { useState } from "react";
-import ResumeCarousel from "../components/resumeCarousel";
+import resumeCarousel from "../components/resumeCarousel";
 
 export default function Resume() {
   const [selectedItem, setSelectedItem] = useState(null);
