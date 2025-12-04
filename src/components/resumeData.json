@@ -1,0 +1,101 @@
+[
+  {
+    "id": 1,
+    "title": "Professional Summary",
+    "category": "About",
+    "date": "",
+    "description": "Motivated Information Technology student with hands-on experience in technical support, system upgrades, networking fundamentals, and enterprise-level deployments. Strong problem solver with experience supporting large IT environments at Metra, assisting with major rollouts such as Windows 11, and contributing to technology solutions projects at Zebra Technologies in an IPRO course.",
+    "badges": ["Technical Support", "System Upgrades", "Networking", "Troubleshooting", "Project Experience"]
+  },
+
+  {
+    "id": 2,
+    "title": "Education",
+    "category": "Education",
+    "date": "Expected Graduation: May 2027",
+    "description": "B.S. & M.S. in Information Technology and Management at Illinois Institute of Technology.",
+    "badges": ["GPA: 3.92", "Dean’s List", "Accelerated Master's Program"]
+  },
+
+  {
+    "id": 3,
+    "title": "Skills",
+    "category": "Skills",
+    "date": "",
+    "description": "Technical and professional abilities developed through work experience and academic projects.",
+    "badges": [
+      "Python",
+      "HTML & CSS",
+      "Networking Fundamentals",
+      "Windows OS Troubleshooting",
+      "Microsoft 365 & SharePoint",
+      "Customer Support & Ticketing",
+      "Enterprise Device Setup",
+      "Team Collaboration",
+      "Bilingual: English & Spanish"
+    ]
+  },
+
+  {
+    "id": 4,
+    "title": "IT Intern – Metra Commuter Rail",
+    "category": "Experience",
+    "date": "APR 2025 – Present",
+    "description": "Supporting technical operations for one of Chicago's largest transportation systems. Contributing to onboarding, troubleshooting, hardware support, and enterprise-level service desk operations.",
+    "badges": ["Service Desk", "Onboarding", "Hardware & Software Support", "Troubleshooting"]
+  },
+
+  {
+    "id": 5,
+    "title": "Windows 11 Upgrade Deployment – Metra",
+    "category": "Project",
+    "date": "2025",
+    "description": "Assisted with testing, imaging, and deploying Windows 11 across departments. Ensured software compatibility, user data preservation, and successful onboarding to the new OS environment.",
+    "badges": ["OS Deployment", "Imaging", "User Support", "Testing"]
+  },
+
+  {
+    "id": 6,
+    "title": "UP Cutover Support – Metra",
+    "category": "Project",
+    "date": "2025",
+    "description": "Provided technical support during a major operational cutover for the UP lines. Supported device configuration, user access validation, and system readiness during the transition.",
+    "badges": ["Cutover Support", "System Validation", "Infrastructure Prep"]
+  },
+
+  {
+    "id": 7,
+    "title": "Zebra Technologies – IPRO Project",
+    "category": "Project",
+    "date": "2024",
+    "description": "Developed IT and business-focused solutions for Zebra Technologies as part of a team-based innovation project. Contributed to research, technology recommendations, and problem-solving strategies.",
+    "badges": ["Business Technology", "Innovation", "Team Collaboration"]
+  },
+
+  {
+    "id": 8,
+    "title": "IT Intern – Museum of Science and Industry",
+    "category": "Experience",
+    "date": "MAY 2023 – AUG 2023",
+    "description": "Created SharePoint sites for staff, supported over 300 employees with Microsoft 365 tools, and assisted with onboarding and phone systems.",
+    "badges": ["SharePoint", "Microsoft 365", "Onboarding", "Tech Support"]
+  },
+
+  {
+    "id": 9,
+    "title": "IT Intern – Chicago Public Schools",
+    "category": "Experience",
+    "date": "JUN 2021 – AUG 2021",
+    "description": "Set up laptops and devices for more than 3,000 students. Assisted teachers with classroom technology and troubleshooting.",
+    "badges": ["Device Setup", "K–12 Support", "Troubleshooting"]
+  },
+
+  {
+    "id": 10,
+    "title": "Achievements",
+    "category": "Achievements",
+    "date": "",
+    "description": "Academic accomplishments and recognition for excellence in coursework and hands-on IT work.",
+    "badges": ["Dean’s List (2022–2025)", "3.92 GPA", "Accelerated Master's Program"]
+  }
+]
