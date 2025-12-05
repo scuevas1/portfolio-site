@@ -37,15 +37,6 @@
   },
 
   {
-    "id": 4,
-    "title": "IT Intern – Metra Commuter Rail",
-    "category": "Experience",
-    "date": "APR 2025 – Present",
-    "description": "Supporting technical operations for one of Chicago's largest transportation systems. Contributing to onboarding, troubleshooting, hardware support, and enterprise-level service desk operations.",
-    "badges": ["Service Desk", "Onboarding", "Hardware & Software Support", "Troubleshooting"]
-  },
-
-  {
     "id": 5,
     "title": "Windows 11 Upgrade Deployment – Metra",
     "category": "Project",
@@ -70,6 +61,15 @@
     "date": "2024",
     "description": "Developed IT and business-focused solutions for Zebra Technologies as part of a team-based innovation project. Contributed to research, technology recommendations, and problem-solving strategies.",
     "badges": ["Business Technology", "Innovation", "Team Collaboration"]
+  },
+
+  {
+    "id": 4,
+    "title": "IT Intern – Metra Commuter Rail",
+    "category": "Experience",
+    "date": "APR 2025 – Present",
+    "description": "Supporting technical operations for one of Chicago's largest transportation systems. Contributing to onboarding, troubleshooting, hardware support, and enterprise-level service desk operations.",
+    "badges": ["Service Desk", "Onboarding", "Hardware & Software Support", "Troubleshooting"]
   },
 
   {
