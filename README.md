@@ -1,13 +1,13 @@
 Project Description: This is my personal portfolio website that highlights my work, experience, and interests. The main goal behind this project was to create a site that represents who I am while also showing my skills as a developer. The design is focused on being clean, organized, and easy to navigate. The homepage includes an About Me section where I introduce myself and give a quick overview of my background. I also built a Travel page that displays some of the cities I have visited along with photos. The portfolio also has a Resume page that users can look through, and a Contact page for people whoever might want to reach out.
 
 Technologies Used:
-1. JavaScript
-2. React + Vite
-3. React Router for navigation between pages
-4. AOS for animations and scroll effects
-5. CSS for styling and layout
-6. GitHub Actions for automated builds
-7. Node 24 for running the project locally
+1. React + Vite
+2. JavaScript
+4. React Router for navigation between pages
+5. AOS for animations and scroll effects
+6. CSS for styling and layout
+7. GitHub Actions for automated builds
+8. Node 24 for running the project locally
 
 Lessons Learned: Building this project helped me improve my React skills and understand how to structure pages in a cleaner way. I learned how to use reusable components, set up different pages with routing, and add animations to make the design look better. I also got better at handling build errors, updating scripts, and using GitHub Actions to automate the build. Overall, this project helped me understand what it takes to organize and build a real frontend project from start to finish.
 
